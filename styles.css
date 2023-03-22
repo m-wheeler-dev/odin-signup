@@ -1,0 +1,60 @@
+/* GOOGLE FONT IMPORT [Ubuntu] */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@200;300;400&display=swap");
+
+/* DEFAULTS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	color: #fff;
+	background-color: #541e83;
+	display: flex;
+}
+
+.logo-side,
+.form-side {
+	height: 100%;
+	width: 50%;
+}
+
+.logo-side {
+	background-image: url("andrej-lisakov-unsplash.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	height: 5rem;
+	width: 100%;
+	margin-top: 50%;
+	padding-top: 1rem;
+	font-weight: 300;
+	text-align: center;
+	background: #00000070;
+}
+
+.form-side {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.form-side > p {
+	width: 70%;
+}
+
+form {
+	width: 80%;
+	padding: 1.5rem;
+	background-color: #9e9e9e24;
+	border-radius: 15px;
+	box-shadow: 0 0 0.5rem #000;
+}
