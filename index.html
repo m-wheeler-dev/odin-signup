@@ -11,7 +11,9 @@
 	<body>
 		<div class="logo-side">
 			<h1>MW DevWorks</h1>
+			<p>Photo Credit: Andrej Lisakov on Unsplash</p>
 		</div>
+
 		<div class="form-side">
 			<p>
 				This is not a real online service!
@@ -21,17 +23,78 @@
 				<br />
 				Sign Up Now!
 			</p>
-			<form action="post">
+			<form action="" method="get">
 				<h2>Just do the thing!</h2>
-				<input type="text" placeholder="Thor" />
-				<input type="text" placeholder="Odinson" />
-				<input type="text" placeholder="thor@thunder.com" />
-				<input type="text" placeholder="(555) 555-5555" />
-				<input type="text" placeholder="Create Password" />
-				<input type="text" placeholder="Confirm Password" />
+				<div>
+					<label for="FirstName">First Name</label>
+					<input
+						type="text"
+						placeholder="Thor"
+						name="FirstName"
+						minlength="1"
+						required
+					/>
+				</div>
+
+				<div>
+					<label for="LastName">Last Name</label>
+					<input
+						type="text"
+						placeholder="Odinson"
+						name="LastName"
+						minlength="1"
+						required
+					/>
+				</div>
+
+				<div>
+					<label for="Email">Email</label>
+					<input
+						type="email"
+						placeholder="thor@thunder.com"
+						name="Email"
+						required
+					/>
+				</div>
+
+				<div>
+					<label for="Phone">Phone </label
+					><input
+						type="text"
+						placeholder="1234567890"
+						name="Phone"
+						pattern="[0-9]{10}"
+						title="Requested format is: 1234567890"
+						required
+					/>
+				</div>
+				<div>
+					<label for="Password">Password</label>
+					<input
+						type="password"
+						placeholder="Create Password"
+						name="Password"
+						pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+						title="Please use at least 8 characters, including at least 1 capital letter and 1 number"
+						required
+					/>
+				</div>
+
+				<div>
+					<label for="ConfirmPW">Confirm Password</label>
+					<input
+						type="password"
+						placeholder="Confirm Password"
+						name="ConfirmPW"
+						pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+						title="Please use at least 8 characters, including at least 1 capital letter and 1 number"
+						required
+					/>
+				</div>
+
+				<button type="submit">Create Account</button>
 			</form>
-			<button>Create Account</button>
-			<p>Already have an account? Log in</p>
+			<p>Already have an account? <a href="#" target="#">Log in</a></p>
 		</div>
 	</body>
 </html>
